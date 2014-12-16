@@ -9,7 +9,7 @@ else
   require __DIR__.'/../../autoload.php';
 }
 
-$app = new Symfony\Component\Console\Application('myvm', '0.0.5');
+$app = new Symfony\Component\Console\Application('myvm', '0.0.6');
 
 $app->add(new Gpkfr\Myvm\InitCommand);
 
