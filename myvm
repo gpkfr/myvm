@@ -1,0 +1,16 @@
+#!/usr/bin/env php
+<?
+
+if (file_exists(__DIR__.'/vendor/autoload.php')) {
+  require __DIR__.'/vendor/autoload.php';
+}
+else
+{
+  require __DIR__.'/../../autoload.php';
+}
+
+$app = new Symfony\Component\Console\Application('myvm', '0.0.5');
+
+$app->add(new Gpkfr\Myvm\InitCommand);
+
+$app->run();
