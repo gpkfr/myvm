@@ -20,7 +20,7 @@
     }
   },
   "bin": [
-    "mavm"
+    "myvm"
     ],
   "minimum-stability": "stable"
 }
